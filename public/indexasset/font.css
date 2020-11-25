@@ -1,0 +1,136 @@
+@font-face {
+	font-family: 'nox';
+	src: url('nox.ttf'); /* IE9 Compat Modes */
+   
+	
+  }
+  body{
+	  background:#99ccff;
+	   overflow-x:hidden;	
+  }
+  footer {
+	  position:absolute;
+	  bottom:0;
+	  z-index:-9999999;
+  }	
+  footer #nado img{
+	  width:100%;
+  }
+  footer #foot img{
+	  height:70px;
+	  width:100%;
+  }
+  }
+   #tooltip{ 
+	   letter-spacing: 2px !important;
+	   background:rgba(0,0,0,0.8);
+	   padding:10px !important;
+	   color:#FFF !important;
+	   font-weight:normal !important;
+	   visibility:hidden;
+		@include transition(
+		  opacity 500ms linear,
+		  visibility 0s linear 500ms
+		)
+		
+   }
+   
+  
+  .box-menu{
+	  background:rgba(255,255,255,0.7);
+	  text-align:center;
+	  padding:12% 0;
+	  z-index:1;
+	  border-radius:30px;
+	  margin-bottom:20px;
+  }
+  .box-menu img{
+	  width:50%;
+  }
+  .box-menu span{
+	  display:block;
+	  font-size:130%;
+	  margin-top:10px;
+	  font-weight:bold;
+  }
+  #menu{
+	  position:relative;
+	  margin-top:11%;
+  }
+  #logo{
+	  margin-top:20px;
+	  background:rgba(255,255,255,0.4);
+   }
+  #logo img{
+	  width:80px;
+  }
+  #logo #logo2{
+	  width:170px;
+	  position:relative;
+	  left:30px;
+	  top:-10px;
+	  
+  }
+  
+  
+  .box-menu:hover{
+	  cursor:pointer;
+  }
+  
+  .hover{
+	  opacity:0.4;
+	  
+  }
+  
+  .fade-scale {
+	transform: scale(0);
+	opacity: 0;
+	-webkit-transition: all .25s linear;
+	-o-transition: all .25s linear;
+	transition: all .25s linear;
+  }
+  
+  .fade-scale.in {
+	opacity: 1;
+	transform: scale(1);
+  }
+  
+  
+  @media only screen and (max-width: 480px) {
+  
+	  .road{
+		  display:none;
+	  }
+	  #logo img{
+  
+		  width:30% !important;
+	  }
+	  #logo #logo2{
+		  width:50% !important;
+	  }
+	  #menu span{
+		  font-size:80%!important;
+	  }
+  
+  
+  }
+  @media (max-width:629px) {
+	img#optionalstuff {
+	  display: none;
+	}
+  }
+  
+  .items img{
+	  height:120px;
+	  cursor:pointer;
+  }
+  .items {
+	  margin-bottom:40px !important;
+  }
+  .modal-body {
+	  position: relative;
+	  overflow-y: auto;
+	  max-height: auto;
+	  padding: 5px;
+  }
+  
