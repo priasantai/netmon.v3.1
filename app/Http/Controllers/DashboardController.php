@@ -26,17 +26,17 @@ class DashboardController extends Controller
     }
         public function fo (){
         // $fo = DB::table('fos')->get(); // tanpa model
-        $fo = \App\Models\fo::simplePaginate(10);
+        $fo = \App\Models\fo::simplePaginate(5);
         return view ('fo',['fo' => $fo]);
     }
     public function radio (){
         // $radio = DB::table('radios')->get(); // tanpa model
-        $radio = \App\Models\radio::simplePaginate(10);
+        $radio = \App\Models\radio::simplePaginate(5);
         return view ('radio',['radio' => $radio]);
     }
     public function server (){
         // $server = DB::table('servers')->get(); // tanpa model
-        $server = \App\Models\serverM::simplePaginate(10);
+        $server = \App\Models\serverM::simplePaginate(5);
         return view ('server',['server' => $server]);
     }
     public function setting (){

@@ -15,13 +15,13 @@
                                   <div class="form-group row">
                                      <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg"><b>Radio Ap/Client:</b></label>
                                       <div class="col-sm-3">
-                                        <input type="text" name="radio" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Tambahkan Data RADIO">
+                                        <input type="text" name="radio" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Register RADIO">
                                       </div>
                                   </div>
                                   <div class="form-group row">
                                           <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg"><b>IP / DOMAIN:</b></label>
                                             <div class="col-sm-3">
-                                              <input type="text" name="alamat" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Tambahkan Alamat IP/Domain">
+                                              <input type="text" name="alamat" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Alamat IP/Domain">
                                             </div>
                                   </div>
                                   <button type="submit" class="btn btn-success">Add RADIO</button>

@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="../node_modules/bootstrap-social/bootstrap-social.css">
 
   <!-- Template CSS -->
-  <link rel="stylesheet" href="{{asset('public/assets/css/style.css')}}">
-  <link rel="stylesheet" href="{{asset('public/assets/css/components.css')}}">
+  <link rel="stylesheet" href="{{ asset('assets/css/style.css')}}">
+  <link rel="stylesheet" href="{{ asset('assets/css/components.css')}}">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
       <div class="d-flex flex-wrap align-items-stretch">
         <div class="col-lg-4 col-md-6 col-12 order-lg-1 min-vh-100 order-2 bg-white">
           <div class="p-4 m-3">
-            <img src="{{asset('public/assets/img/logo.png')}}" alt="logo" width="295" height="75" mt-2>
+            <img src="{{ asset('assets/img/logo.png')}}" alt="logo" width="295" height="75" mt-2>
             <h4 class="text-dark font-weight-normal">Network Monitoring <span class="font-weight-bold">App</span></h4>
             <p class="text-muted">Real time check network status.</p>
             <form method="POST" action="{{ route('login') }}" class="needs-validation" novalidate="">
@@ -98,13 +98,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="{{asset('public/assets/js/stisla.js')}}"></script>
+  <script src="{{ asset('assets/js/stisla.js')}}"></script>
 
   <!-- JS Libraies -->
 
   <!-- Template JS File -->
-  <script src="{{asset('public/assets/js/scripts.js')}}"></script>
-  <script src="{{asset('public/assets/js/custom.js')}}"></script>
+  <script src="{{ asset('assets/js/scripts.js')}}"></script>
+  <script src="{{ asset('assets/js/custom.js')}}"></script>
 
   <!-- Page Specific JS File -->
 </body>

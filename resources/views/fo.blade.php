@@ -12,13 +12,13 @@
                         <div>
                             <div>
                              
-                                <a href="{{ url('foadd')}}"><button type="button" class="btn btn-success">Add Fo/Ont</button></a>
+                                <a href="/foadd"><button type="button" class="btn btn-success">Add Fo/Ont</button></a>
                              
                             </div><br>
                             <table class="table table-bordered">
                                 <thead>
                                   <tr>
-                                        <th>ID</th>
+                                        <th>NO</th>
                                     	<th>ONT</th>
                                     	<th>Address</th>
                                     	<th>Status</th>
@@ -38,25 +38,25 @@
                                                 if (strpos($output, 'Destination net unreachable') !== false) {
                                                     echo "<button type='button' class='btn btn-danger btn-circle'>
                                                     <i class='fa fa-power-off'></i>
-                                                    </button>&nbsp;<font color='#D9534F'> - <b>Unreacable</b></font>";
+                                                    </button>&nbsp;<font color='#000000'> - <b>TROUBLE! CHECK LINKS</b></font>";
                                                 }
                                                     elseif(strpos($output, 'Request timed out') !== false)
                                                 {
                                                     echo "<button type='button' class='btn btn-success btn-circle'>
                                                     <i class='fa fa-question-circle'></i>
-                                                    </button>&nbsp;<font color='#5CB85C'> - <b>Offline</b></font>";
+                                                    </button>&nbsp;<font color='#CD5C5C'> - <b>ONT POWER OFF</b></font>";
                                                 }
                                                     elseif(strpos($output, 'TTL') !== false)
                                                 {
                                                     echo "<button type='button' class='btn btn-success btn-circle'>
                                                     <i class='fa fa-check'></i>
-                                                    </button>&nbsp;<font color='#5CB85C'> - <b>Online</b></font>";
+                                                    </button>&nbsp;<font color='#BA55D3'> - <b>ONT ONLINE</b></font>";
                                                 }
                                                 else
                                                 {
                                                     echo "<button type='button' class='btn btn-success btn-circle'>
                                                     <i class='fa fa-question-circle'></i>
-                                                    </button>&nbsp;<font color='#5CB85C'> - <b>Connection Timeout</b></font>";
+                                                    </button>&nbsp;<font color='#5CB85C'> - <b>ONT POWER OFF</b></font>";
                                                 }
                                                 
                                                 ?>
@@ -67,7 +67,8 @@
                                             </tr>
                                          @endforeach
                                        </tbody>
-                                    </table>
+                                    
+                                </table>
                                 <div>{{ $fo->links() }}</div>
                             </div>
                         </div>

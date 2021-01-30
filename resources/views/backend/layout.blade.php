@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-
   <title>@yield('title')</title>
 
   <!-- General CSS Files -->
@@ -17,8 +16,8 @@
   <link rel="stylesheet" href="../node_modules/summernote/dist/summernote-bs4.css">
 
   <!-- Template CSS -->
-  <link rel="stylesheet" href="{{asset('public/assets/css/style.css')}}">
-  <link rel="stylesheet" href="{{asset('public/assets/css/components.css')}}">
+  <link rel="stylesheet" href="{{ asset ('/assets/css/style.css')}}">
+  <link rel="stylesheet" href="{{ asset ('/assets/css/components.css')}}">
 </head>
 
 <body>
@@ -39,10 +38,10 @@
         </form>
         <ul class="navbar-nav navbar-right">
           <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-            <img alt="image" src="{{asset('public/assets/img/avatar/avatar-1.png')}}" class="rounded-circle mr-1">
+            <img alt="image" src="{{ asset('/assets/img/avatar/avatar-1.png')}}" class="rounded-circle mr-1">
             <div class="d-sm-none d-lg-inline-block">Hi, {{ Auth::user()->name }}</div></a>
             <div class="dropdown-menu dropdown-menu-right">
-              <div class="dropdown-title">Netmon v3.1</div>
+              <div class="dropdown-title">Logged in 5 min ago</div>
               <a href="#" class="dropdown-item has-icon">
                 <i class="far fa-user"></i> Profile
               </a>
@@ -72,7 +71,7 @@
           <ul class="sidebar-menu">
               <li class="menu-header"><hr></li>
               <li class="nav-item dropdown active">
-                <a href="{{ url('/dashboard')}}" class="nav-link"><i class="fas fa-network-wired"></i><span>All Links</span></a>
+                <a href="{{ url('/dashboard')}}" class="nav-link"><i class="fas fa-network-wired"></i><span>MONITOR</span></a>
               </li>
               <li class="menu-header"></li>
               <li class="nav-item dropdown">
@@ -96,7 +95,7 @@
               <li class="nav-item dropdown">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-users-cog"></i> <span>Setting</span></a>
                 <ul class="dropdown-menu">
-                  <li><a class="nav-link" href="{{ url('/setting')}}">Access</a></li>
+                  {{-- <li><a class="nav-link" href="{{ url('/setting')}}">Access</a></li> --}}
                 </ul>
               </li>
             </ul>
@@ -123,7 +122,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="{{asset('public/assets/js/stisla.js')}}"></script>
+  <script src="{{ asset ('/assets/js/stisla.js')}}"></script>
 
   <!-- JS Libraies -->
   <script src="../node_modules/simpleweather/jquery.simpleWeather.min.js"></script>
@@ -134,11 +133,11 @@
   <script src="../node_modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
 
   <!-- Template JS File -->
-  <script src="{{asset('public/assets/js/scripts.js')}}"></script>
-  <script src="{{asset('public/assets/js/custom.js')}}"></script>
+  <script src="{{ asset ('/assets/js/scripts.js')}}"></script>
+  <script src="{{ asset ('/assets/js/custom.js')}}"></script>
 
   <!-- Page Specific JS File -->
-    <script src="{{asset('public/assets/js/page/index-0.js')}}"></script>
+    <script src="{{ asset ('/assets/js/page/index-0.js')}}"></script>
 </body>
 </html>
 @include('sweetalert::alert')

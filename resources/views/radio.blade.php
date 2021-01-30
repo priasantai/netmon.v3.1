@@ -11,13 +11,13 @@
                     <div class="col-md-12">
                         <div>
                             <div>
-                                    <a href="/netmon/radioadd"><button type="button" class="btn btn-success">Add Radio</button></a>
+                                    <a href="/radioadd"><button type="button" class="btn btn-success">Add Radio</button></a>
                                 
                             </div><br>
                             <table class="table table-bordered">
                                 <thead>
                                   <tr>
-                                        <th>ID</th>
+                                        <th>NO</th>
                                     	<th>Radio</th>
                                     	<th>Address</th>
                                     	<th>Status</th>
@@ -37,28 +37,29 @@
                                                 if (strpos($output, 'Destination net unreachable') !== false) {
                                                     echo "<button type='button' class='btn btn-danger btn-circle'>
                                                     <i class='fa fa-power-off'></i>
-                                                    </button>&nbsp;<font color='#D9534F'> - <b>Unreacable</b></font>";
+                                                    </button>&nbsp;<font color='#000000'> - <b>TROUBLE! CHECK TOWER</b></font>";
                                                 }
                                                     elseif(strpos($output, 'Request timed out') !== false)
                                                 {
                                                     echo "<button type='button' class='btn btn-success btn-circle'>
                                                     <i class='fa fa-question-circle'></i>
-                                                    </button>&nbsp;<font color='#5CB85C'> - <b>Offline</b></font>";
+                                                    </button>&nbsp;<font color='#CD5C5C'> - <b>RADIO POWER OFF</b></font>";
                                                 }
                                                     elseif(strpos($output, 'TTL') !== false)
                                                 {
                                                     echo "<button type='button' class='btn btn-success btn-circle'>
                                                     <i class='fa fa-check'></i>
-                                                    </button>&nbsp;<font color='#5CB85C'> - <b>Online</b></font>";
+                                                    </button>&nbsp;<font color='#BA55D3'> - <b>RADIO ONLINE</b></font>";
                                                 }
                                                 else
                                                 {
                                                     echo "<button type='button' class='btn btn-success btn-circle'>
                                                     <i class='fa fa-question-circle'></i>
-                                                    </button>&nbsp;<font color='#5CB85C'> - <b>Connection Timeout</b></font>";
+                                                    </button>&nbsp;<font color='#5CB85C'> - <b>RADIO POWER OFF</b></font>";
                                                 }
                                                 
-                                                ?></td>
+                                                ?>
+                                                </td>
                                         	<td><a href="{{ url('radioedit',$linkradio->id)}}"><button type="button" class="btn btn-info">Edit</button></a>
                                                 <a href="{{ url('radiodelete',$linkradio->id)}}"><button type="button" class="btn btn-danger">Delete</button></a>
                                             </td>
